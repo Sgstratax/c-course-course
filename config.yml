@@ -1,0 +1,16 @@
+title: 'C# course'
+description: 'Learning about C#'
+template:
+  repo: c-course-template
+  name: c-course
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
